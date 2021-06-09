@@ -1,0 +1,17 @@
+/*Prefijos para aplicar las transformaciones en esos navegadores, web, mozila, opera*/
+@mixin transform {
+-webkit-transform: translate(200px);
+-moz-transform: translate(200px);
+-o-transform: translate(200px);
+}
+@mixin box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin width-about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}

@@ -1,0 +1,19 @@
+/* Cambiamos el color de los enlaces ya visitados a naranja */
+a:visited {
+    color:white;
+}
+.titulo {
+    text-align: right;
+}
+.link {
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Media {
+    float: none;
+    box-sizing: border-box;
+}
+    
+$bgcolor:black;
+$fontcolor:white;
+$textcolor: black;
