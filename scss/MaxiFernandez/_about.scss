@@ -1,0 +1,103 @@
+
+
+@mixin transform-hover {
+-webkit-transform: translate(200px);
+-moz-transform: translate(200px);
+-o-transform: translate(200px);
+}
+@mixin width-about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/*ajustar el tamaño de las imagenes del index*/
+
+.MaxiFernandez {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto
+ }
+.MaxiFernandez img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    filter: brightness(90%);
+&:hover {
+    filter:brightness(110%);
+}
+}
+/*Maxi Fernandez*/
+.MaxiF {
+    margin: auto;
+}
+ .tatuador .m1 .m2 {
+    float:right;
+}
+.title{
+    text-decoration:underline blue;
+    &:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; 
+    animation-duration: 2s; 
+    }
+}
+
+.carrousel {
+    width: 50%;
+    height: 50%;
+}
+
+
+.TituloMaxi {
+    font-size: 60px;
+    margin: 2em;
+}
+.bonifacio:hover {
+transform: translate(200px);
+/*Prefijos para aplicar las transformaciones en esos navegadores, web, mozila, opera*/
+@include transform-hover;
+}
+
+    /*Texto sobre maxi fuente*/
+.about {
+    text-align: left;
+    text-decoration: none;
+    @include width-about;
+}
+.about img {
+    float: left;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-left-style: groove;
+    margin-right: 25px;
+}
+.tatuador h2 {
+    padding-top: 5em;
+    border: solid 2px blue;
+    padding: 3px;
+    display: inline-block;
+    &:hover {
+    animation: animate__bounceInRight;
+    animation-duration: 4s; 
+    }
+}
+
+.Mural {
+    padding-top: 2em;
+}
+.muralito {
+    font-size: small;
+    margin-bottom: 20px;
+}
+.bonifacio:hover {
+    animation:__slideInRight;
+    animation-duration: 3s;
+}

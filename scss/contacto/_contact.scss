@@ -1,0 +1,40 @@
+$textcolor: black;
+
+/*Contacto .html*/
+h4 {
+    color:$textcolor;
+}
+h4:hover {
+    animation: changeColor 8s;
+}
+@keyframes changeColor {
+    0% {
+        background-color: rgb(163, 149, 149);
+    }
+    15% {
+        background-color:blue;
+    }
+    50% {
+        background-color:blueviolet;
+    }
+}
+.contact {
+    text-align: center;
+
+}
+.wt {
+    padding: 1em;
+}
+.ig {
+    padding: 1em;
+}
+.t1 {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    margin: 1rem;
+    animation-duration: 1.5s;
+}
+
+.card-text{
+    color:$textcolor;
+}

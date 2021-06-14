@@ -1,0 +1,17 @@
+/*Este es mi Body*/
+$fontcolor:white;
+$bgcolor:black;
+@mixin box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:$bgcolor;/*Color de fondo para todo el body*/
+    font-family: 'Orelega One', cursive; /*fuente*/
+    font-size: 25px; /*tamaño de la funte*/
+    color: $fontcolor; /*color fuente*/   
+    @include box;
+    text-align: center;/*Texto en el centro de la pag*/
+}
+/*Fin Body*/

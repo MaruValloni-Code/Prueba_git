@@ -1,0 +1,11 @@
+.galeria img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(90%);
+    z-index: 2;/*Z-INDEZ para q el menu quede fijo" mientras scroleas sin q quede debajo de las imagenes y el background*/
+   &:hover {
+       filter: brightness(110%);
+   } 
+}

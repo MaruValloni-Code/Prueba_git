@@ -1,0 +1,11 @@
+/*h2 index*/
+.titulo {
+    text-decoration: underline blue;
+    display: inline-block;
+    margin: 0.5rem;
+    &:hover { /* Animacion para el titulo Tatto Artist*/  
+    animation: _heartBeat;
+    animation-duration: 7s; 
+    }
+}
+
