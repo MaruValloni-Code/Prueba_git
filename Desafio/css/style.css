@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/*Nesting-Anidamiento*/
+/*url import*/
+/* Parametros de estilo para toda la pag */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Este es mi Body*/
+body {
+  background-color: black;
+  /*Color de fondo para todo el body*/
+  font-family: "Orelega One", cursive;
+  /*fuente*/
+  font-size: 25px;
+  /*tamaño de la funte*/
+  color: white;
+  /*color fuente*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  /*Texto en el centro de la pag*/
+}
+
+/*Fin Body*/
+/*Header*/
+header {
+  /*para tener el menu en toda la pag*/
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/*header fin*/
+/*Nav bar*/
+/*menu*/
+ul {
+  list-style: none;
+}
+ul li {
+  background-color: black;
+  display: inline-block;
+}
+ul li a {
+  color: white;
+  background-color: black;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul li a:hover {
+  background-color: #0921FB;
+}
+ul li a:active {
+  color: white;
+  background-color: white;
+}
+
+/*Portada Maxi Fernandez*/
+/*Index Portada*/
+/*DIV con IMG para agregarle magia al background con movimiento*/
+.containerPortada {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/fondoa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation-name: movimiento;
+  -webkit-animation-name: movimiento;
+  -o-animation-name: movimiento;
+  -moz-animation-name: movimiento;
+  animation-duration: 5s;
+}
+
+/*Position en la img de Background de la portada*/
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+.containerPortada {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/*index logo tatto*/
+.logotatto {
+  width: max-content;
+}
+
+/*h2 index*/
+.titulo {
+  text-decoration: underline blue;
+  display: inline-block;
+  margin: 0.5rem;
+}
+.titulo:hover {
+  /* Animacion para el titulo Tatto Artist*/
+  animation: _heartBeat;
+  animation-duration: 7s;
+}
+
+/*ajustar el tamaño de las imagenes del index*/
+.MaxiFernandez {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: auto;
+}
+
+.MaxiFernandez img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 25px;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+.MaxiFernandez img:hover {
+  filter: brightness(110%);
+}
+
+/*Maxi Fernandez*/
+.MaxiF {
+  margin: auto;
+}
+
+.tatuador .m1 .m2 {
+  float: right;
+}
+
+.title {
+  text-decoration: underline blue;
+}
+.title:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.carrousel {
+  width: 50%;
+  height: 50%;
+}
+
+.TituloMaxi {
+  font-size: 60px;
+  margin: 2em;
+}
+
+.bonifacio:hover {
+  transform: translate(200px);
+  /*Prefijos para aplicar las transformaciones en esos navegadores, web, mozila, opera*/
+  -webkit-transform: translate(200px);
+  -moz-transform: translate(200px);
+  -o-transform: translate(200px);
+}
+
+/*Texto sobre maxi fuente*/
+.about {
+  text-align: left;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.about img {
+  float: left;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-left-style: groove;
+  margin-right: 25px;
+}
+
+.tatuador h2 {
+  padding-top: 5em;
+  border: solid 2px blue;
+  padding: 3px;
+  display: inline-block;
+}
+.tatuador h2:hover {
+  animation: animate__bounceInRight;
+  animation-duration: 4s;
+}
+
+.Mural {
+  padding-top: 2em;
+}
+
+.muralito {
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+.bonifacio:hover {
+  animation: __slideInRight;
+  animation-duration: 3s;
+}
+
+/*Portafolio .html*/
+.PortFolio {
+  display: flex;
+  display: inline-flex;
+}
+
+.galeria img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  filter: brightness(90%);
+  z-index: 2;
+  /*Z-INDEZ para q el menu quede fijo" mientras scroleas sin q quede debajo de las imagenes y el background*/
+}
+.galeria img:hover {
+  filter: brightness(110%);
+}
+
+.galeria {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: max-content;
+  margin: auto;
+  background-image: url(../img/fondofolio.jpg);
+  background-attachment: fixed;
+  background-clip: content-box;
+}
+
+/*Contacto .html*/
+.ig, .wt {
+  font-size: 3rem;
+  justify-content: space-around;
+}
+
+.whatsapp, h4, .redes, .enlace h2 a {
+  color: black;
+}
+
+.whatsapp:hover, .redes:hover, .enlace h2 a {
+  animation: changeColor 8s;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: gray;
+  }
+  15% {
+    background-color: blue;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+}
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t1 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  padding: 1rem;
+  animation-duration: 1.5s;
+}
+
+.card-text {
+  color: black;
+}
+
+/*Tips .html*/
+.cuidados {
+  text-align: left;
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+.ListaTips li {
+  text-align: left;
+}
+
+p strong {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.parrafo1 {
+  text-align: left;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.parrafo1 img {
+  float: left;
+  padding-right: 30px;
+}
+
+/*Mobile Fondo del home Azul*/
+@media only screen and (max-width: 400px) {
+  .Media {
+    color: black;
+    background-color: blue;
+  }
+}
+/* Pantalla Tablet fondo del Home*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .Media {
+    background-color: black;
+  }
+}
+/* Desktop fondo del Home en Negro*/
+@media only screen and (min-width: 960px) {
+  .Media {
+    background-color: black;
+  }
+}
+/* Cambiamos el color de los enlaces ya visitados a naranja */
+a:visited {
+  color: white;
+}
+
+.titulo {
+  text-align: right;
+}
+
+.link {
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Media {
+  float: none;
+  box-sizing: border-box;
+}
+
+/*Footer*/
+footer img {
+  width: 500px;
+}
+
+.pie {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+/*Fin Footer*/
+
+/*# sourceMappingURL=style.css.map */

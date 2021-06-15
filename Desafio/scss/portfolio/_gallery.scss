@@ -1,0 +1,12 @@
+.galeria {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: max-content;
+    margin: auto;
+    background-image: url(../img/fondofolio.jpg);
+    background-attachment: fixed;
+    background-clip: content-box;
+}
+

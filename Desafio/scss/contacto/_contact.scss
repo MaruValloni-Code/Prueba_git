@@ -1,0 +1,41 @@
+$textcolor: black;
+
+/*Contacto .html*/
+.ig, .wt {
+    font-size: 3rem; 
+    justify-content: space-around;
+
+}
+.whatsapp, h4, .redes, .enlace h2 a {
+    color:$textcolor;
+}
+.whatsapp:hover, .redes:hover, .enlace h2 a {
+    animation: changeColor 8s;
+}
+@keyframes changeColor {
+    0% {
+        background-color: gray;
+    }
+    15% {
+        background-color:blue;
+    }
+    50% {
+        background-color:blueviolet;
+    }
+}
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.t1 {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    padding: 1rem;
+    animation-duration: 1.5s;
+}
+
+.card-text{
+    color:$textcolor;
+}

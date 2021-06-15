@@ -1,0 +1,31 @@
+/*Nav bar*/
+$bgcolor:black;
+$fontcolor:white;
+
+
+/*menu*/
+    ul {
+        list-style: none;
+        li {
+            background-color:$bgcolor;
+            display: inline-block;
+            a {
+                color:$fontcolor;
+                background-color:$bgcolor;
+                padding: 1em;
+                text-decoration: none;
+                text-transform: uppercase;   
+                &:hover {    
+                    background-color:#0921FB;
+                    }  &:active {
+                        color: $fontcolor;
+                        background-color: white;
+                 }  
+                    
+            }
+        }
+ 
+    }
+
+  
+      
