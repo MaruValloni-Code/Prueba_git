@@ -1,6 +1,6 @@
 /* Cambiamos el color de los enlaces ya visitados a naranja */
 a:visited {
-    color:white;
+    $fontcolor:white;
 }
 .titulo {
     text-align: right;

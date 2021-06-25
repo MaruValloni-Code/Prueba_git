@@ -8,15 +8,16 @@ $fontcolor:white;
     
     ul {
         list-style: none;
+        margin: auto;
         li {
             background-color:$bgcolor;
             display: inline-block;
             a {
-                color:$fontcolor;
-                background-color:$bgcolor;
-                padding: 1em;
+                color: $fontcolor;
+                background-color: $bgcolor;
                 text-decoration: none;
-                text-transform: uppercase;   
+                text-transform: uppercase;  
+                padding: 1rem; 
                 &:hover {    
                     background-color:#0921FB;
                     }  &:active {
@@ -28,6 +29,8 @@ $fontcolor:white;
         }
  
     }
+
+    
 }
     
 

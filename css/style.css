@@ -38,6 +38,7 @@ header {
 /*menu*/
 .navegador ul {
   list-style: none;
+  margin: auto;
 }
 .navegador ul li {
   background-color: black;
@@ -46,9 +47,9 @@ header {
 .navegador ul li a {
   color: white;
   background-color: black;
-  padding: 1em;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 1rem;
 }
 .navegador ul li a:hover {
   background-color: #0921FB;
@@ -329,10 +330,6 @@ p strong {
   }
 }
 /* Cambiamos el color de los enlaces ya visitados a naranja */
-a:visited {
-  color: white;
-}
-
 .titulo {
   text-align: right;
 }
