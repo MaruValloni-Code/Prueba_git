@@ -11,10 +11,13 @@
 }
 
 /*Este es mi Body*/
+
 body {
   background-color: black;
   /*Color de fondo para todo el body*/
   font-family: "Orelega One", cursive;
+  font-display: optional;
+  
   /*fuente*/
   font-size: 25px;
   /*tamaño de la funte*/
@@ -37,6 +40,11 @@ header {
   margin: 2rem auto;
   text-align: center;
 
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
 }
 
 .logomf {
@@ -338,6 +346,10 @@ p strong {
 .parrafo1 img {
   float: left;
   padding-right: 30px;
+}
+.imgParrafo {
+  width: 400px;
+  height: auto;
 }
 
 /*Mobile Fondo del home Azul*/
