@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /*Nesting-Anidamiento*/
 /*url import*/
-/* Parametros de estilo para toda la pag */
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+/* Parametros de estilo para toda la pag */
 * {
   margin: 0;
   padding: 0;
@@ -26,37 +28,58 @@ body {
 
 /*Fin Body*/
 /*Header*/
+
 header {
   /*para tener el menu en toda la pag*/
   position: sticky;
   top: 0;
   z-index: 3;
+  margin: 2rem auto;
+  text-align: center;
+
 }
 
-/*header fin*/
+.logomf {
+  float: left;
+}
+
 /*Nav bar*/
 /*menu*/
 .navegador ul {
   list-style: none;
   margin: auto;
 }
+
 .navegador ul li {
   background-color: black;
   display: inline-block;
 }
+
 .navegador ul li a {
   color: white;
   background-color: black;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
+  cursor: pointer;
 }
+
 .navegador ul li a:hover {
   background-color: #0921FB;
 }
+
 .navegador ul li a:active {
   color: white;
   background-color: blue;
+}
+
+#btnMenu {
+  display: none;
+}
+
+.toggleMenu {
+  font-size: 22px;
+  display: none;
 }
 
 /*Portada Maxi Fernandez*/
@@ -80,10 +103,12 @@ header {
   from {
     background-position: bottom left;
   }
+
   to {
     background-position: top right;
   }
 }
+
 .containerPortada {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -100,6 +125,7 @@ header {
   display: inline-block;
   margin: 0.5rem;
 }
+
 .titulo:hover {
   /* Animacion para el titulo Tatto Artist*/
   animation: _heartBeat;
@@ -123,14 +149,12 @@ header {
   object-fit: cover;
   filter: brightness(90%);
 }
+
 .MaxiFernandez img:hover {
   filter: brightness(110%);
 }
 
 /*Maxi Fernandez*/
-.MaxiF {
-  margin: auto;
-}
 
 .tatuador .m1 .m2 {
   float: right;
@@ -139,6 +163,7 @@ header {
 .title {
   text-decoration: underline blue;
 }
+
 .title:hover {
   display: inline-block;
   margin: 0 0.5rem;
@@ -190,6 +215,7 @@ header {
   padding: 3px;
   display: inline-block;
 }
+
 .tatuador h2:hover {
   animation: animate__bounceInRight;
   animation-duration: 4s;
@@ -224,6 +250,7 @@ header {
   z-index: 2;
   /*Z-INDEZ para q el menu quede fijo" mientras scroleas sin q quede debajo de las imagenes y el background*/
 }
+
 .galeria img:hover {
   filter: brightness(110%);
 }
@@ -253,13 +280,16 @@ h4:hover {
   0% {
     background-color: #a39595;
   }
+
   15% {
     background-color: blue;
   }
+
   50% {
     background-color: blueviolet;
   }
 }
+
 .contact {
   text-align: center;
 }
@@ -311,24 +341,35 @@ p strong {
 }
 
 /*Mobile Fondo del home Azul*/
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 150px) {
   .Media {
     color: black;
     background-color: blue;
   }
+
+  .navegador {
+    width: 100%;
+    height: 60px;
+  }
+
 }
+
 /* Pantalla Tablet fondo del Home*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 360px) and (max-width: 960px) {
   .Media {
     background-color: black;
   }
+
 }
+
 /* Desktop fondo del Home en Negro*/
 @media only screen and (min-width: 960px) {
   .Media {
     background-color: black;
   }
 }
+
 /* Cambiamos el color de los enlaces ya visitados a naranja */
 .titulo {
   text-align: right;
